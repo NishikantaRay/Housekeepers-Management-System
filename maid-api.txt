@@ -1,0 +1,93 @@
+1-signup page
+	-name
+	-email
+	-pass
+2-login page  
+	-email
+	-pass
+3-home page
+ 	-navbar
+ 	-footer
+ 	-search option
+  	-by location
+ -apply for listing or need services
+     -apply
+	-name
+	-email
+	-phone
+	-location
+	-type of services
+	-rent
+	-optional field for any other issues
+     -services
+	-list of all people 
+	 -select 
+	   -display details of people || service avail
+		-clinic
+		-food 
+		-driving 
+		-home
+	  -available page
+4-payment integration for cust.
+	-paytm/razorpay
+5-default location page
+	-google api /free api
+6-apply for service page
+	-name
+	-email
+	-contact no
+	-type
+	-details(optional)
+7-about us page
+	-team mates details
+	-about the project
+	-problem stat..
+	-what type of service .. you provide offer
+8-contact us page
+	-name 
+	-email
+	-details
+//////DB///////
+1-login
+2-signup
+3-apply
+4-services
+5-contact us
+
+/////API////
+1-post-login
+2-post-signup
+3-post-apply
+4-post-services
+5-post-contactus
+6-get-data of apply cust.
+7-get-data of services
+8-put-data of apply cust.
+9-put-data of services
+10-delete-data of apply cust.
+11-delete-data of services
+12-search
+
+
+Cross-Origin Resource Sharing
+Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism
+ that allows a server to indicate any origins (domain, scheme, or port)
+ other than its own from which a browser should permit loading resources.
+
+What is Bcryptjs used for?
+js uses “bcryptjs”. This module enables storing of passwords as hashed passwords instead of plaintext.
+
+
+What is Express used for?
+The primary use of Express is to provide server-side logic for web and mobile applications, 
+and as such it's used all over the place. Companies which use Express as a
+ foundation of their internet presence include: Accenture. Fox Sports.
+
+joi for validation https://joi.dev/api/?v=17.6.0
+
+What is JSON Web Token in node JS?
+JSON Web Token is an open standard for securely transferring data within parties using a JSON object.
+ JWT is used for stateless authentication mechanisms for users and providers, 
+this means maintaining session is on the client-side instead of storing sessions on the server.
+
+Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports both promises and callbacks.
