@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+    </head>
+    <body>
+        <section class="forms-section">
+            <div class="forms">
+                <div class="form-wrapper is-active">
+                    <button type="button" class="switcher switcher-login">
+                        Login
+                        <span class="underline"></span>
+                    </button>
+                    <form class="form form-login" action="Authentication" method="post">
+                        <fieldset>
+                            <legend>Please, enter your email and password for login.</legend>
+                            <div class="input-block">
+                                <label for="login-email">E-mail</label>
+                                <input id="login-email" type="email"  name="username" required>
+                            </div>
+                            <div class="input-block">
+                                <label for="login-password">Password</label>
+                                <input id="login-password" type="password" name="pass">
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn-login">Login</button> <br>
+                        <button class="btn-login" style="color: white;font-size: 15px" type="submit" formaction="/login-otp">Forgot password</button>
+                    </form>
+                </div>
+                <div class="form-wrapper">
+                    <button type="button" class="switcher switcher-signup">
+                        Sign Up
+                        <span class="underline"></span>
+                    </button>
+                    <form class="form form-signup" action="otp" method="post">
+                        <fieldset>
+                            <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                            <div class="input-block">
+                                <label for="signup-email">E-mail</label>
+                                <input id="signup-email" type="email" name="username" required>
+                            </div>
+                            <div class="input-block">
+                                <label for="signup-password">Password</label>
+                                <input id="signup-password" type="password" name="pass" required>
+                            </div>
+                            <div class="input-block">
+                                <label for="signup-password-confirm">Confirm password</label>
+                                <input id="signup-password-confirm" type="password" name="conpass" required>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn-signup">Continue</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script  >
+            const switchers = [...document.querySelectorAll('.switcher')]
+
+                switchers.forEach(item => {
+                    item.addEventListener('click', function () {
+                        switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+                        this.parentElement.classList.add('is-active')
+
+                    })
+                })
+                var password = document.getElementById("signup-password")
+  , confirm_password = document.getElementById("signup-password-confirm");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+if ({{wrongpass}}==1)
+{
+alert("Invalid username or password");
+}
+if ({{userexists}}==1)
+{
+alert("Account already exists");
+}
+if ({{userexists}}==2)
+{
+alert("User doesn't exist create a new account");
+}
+        </script>
+    </body>
+
+</html>

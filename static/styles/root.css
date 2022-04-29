@@ -1,0 +1,320 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container{
+  padding-top: 2%;
+  padding-bottom: 15%;
+}
+.container-fluid{
+  padding: 4% 15%;
+}
+
+/* Sections */
+#aboutus{
+  background-color: #fafafa;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-family: 'Montserrat';
+}
+.feature-title-about{
+  font-size: 1.5rem;
+  text-align: left;
+}
+.para{
+  font-size: 20px;
+  text-align: left;
+  padding-right: 14%;
+}
+.colored-section {
+  background-color: #084492;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+  color: #fff;
+  
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+.btn-outline-dark-btn{
+  margin-left: -75%;
+}
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  background-color: #003393;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 5% 15% 10%;
+}
+
+ /* media query for mobile view
+  */
+  @media (max-width: 991px) { 
+    .container-fluid {
+      padding: 4% 5%;
+    }
+    .title-image {
+      display: none;
+    }
+  }
+
+/* Title Image */
+
+.title-image {
+  width: 60%;
+  /* transform: rotate(25deg); */
+  position: absolute;
+  right: 10%;
+  opacity: 0.9;
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 2%;
+}
+
+.icon {
+  color: #001E6C;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #4B7BE5;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+
+
+/* Footer Section */
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+.btn-login {
+    color: #4B7BE5;
+    background: #a7e245;
+    transform: translateX(-30%);
+}
+
+
+.section-services {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: "Poppins", sans-serif;
+	background-color: #003393;
+	color: #000;
+}
+
+.section-services .header-section {
+	margin-bottom: 25px;
+}
+
+.section-services .header-section .title {
+	position: relative;
+	margin-bottom: 40px;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 140px;
+	height: 1px;
+	background-color: #f70037;
+}
+
+.section-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 45px;
+	height: 3px;
+	background-color: #f70037;
+}
+
+.section-services .header-section .title span {
+	color: #f70037;
+}
+
+.section-services .header-section .description {
+	color: #fff;
+}
+.contain{
+  padding-top: 8%;
+  padding-bottom: 8%;
+  padding-left: 25%;
+}
+.section-services .single-service {
+	margin-top: 40px;
+	background-color: #fff;
+  border-radius: 10px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+}
+
+.section-services .single-service .part-1 {
+	padding: 40px 40px 25px;
+	border-bottom: 2px solid #1d1e23;
+}
+
+.section-services .single-service .part-1 i {
+	margin-bottom: 25px;
+	font-size: 50px;
+	color: #f70037;
+}
+
+.section-services .single-service .part-1 .title {
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 {
+	padding: 30px 40px 40px;
+}
+
+.section-services .single-service .part-2 .description {
+	margin-bottom: 22px;
+	color: #6f6f71;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 a {
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.section-services .single-service .part-2 a i {
+	margin-right: 10px;
+	color: #f70037;
+}
